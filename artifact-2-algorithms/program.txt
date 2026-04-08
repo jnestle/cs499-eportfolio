@@ -1,4 +1,4 @@
-# Enhanced Inventory Management Program - Algorithms & Data Structures Version
+# Enhanced Inventory Management Program 2 - Algorithms & Data Structures Version
 # Improvements:
 # - Maintains a sorted inventory list (by name)
 # - Implements binary search for efficient searching (O(log n))
