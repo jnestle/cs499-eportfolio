@@ -1,4 +1,4 @@
-# Enhanced Inventory Management Program
+# Enhanced Inventory Management Program 1
 # Software Design Improvements:
 # - Added error handling for user input
 # - Added input validation
