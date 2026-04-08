@@ -1,7 +1,7 @@
 Justin Nestle
 SNHU
 03/26/26
-CS 499 Narrative Module 4
+Enhancements Two
 
              The artifact selected for this enhancement is a Python-based inventory management program that was originally developed earlier in the Computer Science program. The application allows users to add, view, sort, and search for inventory items using a command-line interface. For this milestone, the artifact was enhanced to focus specifically on algorithms and data structures by improving how data is organized, accessed, and processed. These enhancements included implementing a binary search algorithm and maintaining a consistently sorted data structure to improve efficiency and performance.
 This artifact was selected because it provides a clear and practical way to demonstrate the application of algorithmic principles within a real-world scenario. Originally, the program relied on a linear search method, which becomes inefficient as the size of the dataset increases. By implementing binary search, the time complexity was improved from O(n) to O(log n), demonstrating a stronger understanding of algorithm efficiency and scalability. Additionally, the inventory is now automatically sorted after each insertion, ensuring that the data structure supports the binary search algorithm. These improvements showcase skills in algorithm design, data organization, and performance optimization, which are critical components of computer science practice.
