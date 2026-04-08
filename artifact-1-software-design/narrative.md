@@ -2,7 +2,7 @@ Justin Nestle
 SNHU
 March 18th, 2026
 
-CS 499 Milestone Two – Enhancement One Narrative
+Enhancement One Narrative
 
 The artifact selected for this enhancement is a Python-based Inventory Management Program originally created during earlier coursework in the Computer Science program. The program is a console-based application that allows users to add items, view inventory, sort items, and search for specific items. The original version of the program demonstrated foundational programming concepts such as functions, loops, conditionals, and basic user input handling.
 This artifact was selected because it represents a strong foundation in programming and provides clear opportunities for improvement in software design and engineering. The simplicity of the original program made it an ideal candidate for enhancement, particularly in the areas of structure, maintainability, and reliability. The artifact showcases my ability to build functional applications while also demonstrating my ability to analyze existing code and improve it using better software design practices. The enhancements highlight important software engineering concepts such as input validation, error handling, and improved program organization.
