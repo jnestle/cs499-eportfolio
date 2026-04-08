@@ -1,5 +1,5 @@
 # Enhanced Inventory Management Program
-# Improvements:
+# Software Design Improvements:
 # - Added error handling for user input
 # - Added input validation
 # - Improved structure with main() function
