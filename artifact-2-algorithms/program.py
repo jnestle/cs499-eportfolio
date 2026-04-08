@@ -1,0 +1,103 @@
+# Enhanced Inventory Management Program - Algorithms & Data Structures Version
+# Improvements:
+# - Maintains a sorted inventory list (by name)
+# - Implements binary search for efficient searching (O(log n))
+# - Improves data handling and algorithm efficiency
+# - Retains input validation and error handling
+# - Adds detailed comments explaining algorithm choices
+
+inventory = []
+
+def add_item():
+    name = input("Enter item name: ").strip()
+    if name == "":
+        print("Item name cannot be empty.\n")
+        return
+
+    try:
+        quantity = int(input("Enter quantity: "))
+    except ValueError:
+        print("Invalid input. Please enter a numeric value.\n")
+        return
+
+    # Insert item and maintain sorted order
+    new_item = {"name": name, "quantity": quantity}
+    inventory.append(new_item)
+
+    # Sort inventory after insertion (ensures binary search works correctly)
+    inventory.sort(key=lambda x: x["name"].lower())
+
+    print("Item added and inventory sorted.\n")
+
+def view_inventory():
+    if len(inventory) == 0:
+        print("Inventory is empty.\n")
+        return
+
+    print("\nCurrent Inventory:")
+    for item in inventory:
+        print(f"{item['name']} - {item['quantity']}")
+    print()
+
+def binary_search(target):
+    """
+    Performs binary search on sorted inventory list.
+    Time Complexity: O(log n)
+    """
+    low = 0
+    high = len(inventory) - 1
+
+    while low <= high:
+        mid = (low + high) // 2
+        mid_name = inventory[mid]["name"].lower()
+
+        if mid_name == target:
+            return inventory[mid]
+        elif mid_name < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+
+    return None
+
+def search_item():
+    search = input("Enter item name to search: ").strip().lower()
+
+    if search == "":
+        print("Search term cannot be empty.\n")
+        return
+
+    # Use binary search instead of linear search
+    result = binary_search(search)
+
+    if result:
+        print(f"Found: {result['name']} - {result['quantity']}\n")
+    else:
+        print("Item not found.\n")
+
+def menu():
+    while True:
+        print("1. Add Item")
+        print("2. View Inventory")
+        print("3. Search Item")
+        print("4. Exit")
+
+        choice = input("Choose option: ")
+
+        if choice == "1":
+            add_item()
+        elif choice == "2":
+            view_inventory()
+        elif choice == "3":
+            search_item()
+        elif choice == "4":
+            print("Exiting program.")
+            break
+        else:
+            print("Invalid option. Please try again.\n")
+
+def main():
+    menu()
+
+if __name__ == "__main__":
+    main()
