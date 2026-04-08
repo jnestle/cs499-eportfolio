@@ -4,7 +4,7 @@ Milestone 4
 CS 499
 April 5th 2026
 
-Enhancement Three: Databases Narrative
+Enhancement Three - Databases Narrative
 
 The artifact selected for this enhancement is the Inventory Management Android Mobile Application, originally developed in CS 360: Mobile Architect and Programming. This application was designed to allow users to manage inventory items by storing, updating, and displaying product data within a mobile interface.
 This artifact was chosen for inclusion in my ePortfolio because it provides a strong foundation for demonstrating database design and data management skills. The original version of the application included basic functionality for storing inventory data, but it lacked more advanced database operations and optimization. By enhancing this artifact, I was able to expand its functionality to better reflect real-world application requirements and demonstrate my ability to work with structured data.
